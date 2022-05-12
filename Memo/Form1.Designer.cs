@@ -31,10 +31,6 @@ namespace Memo
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuBar = new System.Windows.Forms.MenuStrip();
-            this.txtNote = new System.Windows.Forms.TextBox();
-            this.fdText = new System.Windows.Forms.FontDialog();
-            this.ofdFile = new System.Windows.Forms.OpenFileDialog();
-            this.sfdFile = new System.Windows.Forms.SaveFileDialog();
             this.파일ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.새로만들기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.열기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,12 +54,16 @@ namespace Memo
             this.서식OToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.자동줄바꿈WToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.글꼴FToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtNote = new System.Windows.Forms.TextBox();
+            this.fdText = new System.Windows.Forms.FontDialog();
+            this.ofdFile = new System.Windows.Forms.OpenFileDialog();
+            this.sfdFile = new System.Windows.Forms.SaveFileDialog();
             this.menuBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuBar
             // 
-            this.menuBar.BackColor = System.Drawing.SystemColors.Menu;
+            this.menuBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.menuBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.파일ToolStripMenuItem,
             this.편집EToolStripMenuItem,
@@ -74,29 +74,9 @@ namespace Memo
             this.menuBar.TabIndex = 0;
             this.menuBar.Text = "menuStrip1";
             // 
-            // txtNote
-            // 
-            this.txtNote.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtNote.Location = new System.Drawing.Point(0, 24);
-            this.txtNote.Multiline = true;
-            this.txtNote.Name = "txtNote";
-            this.txtNote.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtNote.Size = new System.Drawing.Size(737, 426);
-            this.txtNote.TabIndex = 1;
-            this.txtNote.TextChanged += new System.EventHandler(this.txtNote_TextChanged);
-            // 
-            // ofdFile
-            // 
-            this.ofdFile.FileName = "openFileDialog1";
-            this.ofdFile.Filter = "텍스트 파일(*.txt)|*.txt|모든 파일(*.*)|*.*";
-            // 
-            // sfdFile
-            // 
-            this.sfdFile.FileName = "텍스트";
-            this.sfdFile.Filter = "텍스트 파일(*.txt)|*.txt|모든 파일(*.*)|*.*";
-            // 
             // 파일ToolStripMenuItem
             // 
+            this.파일ToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.파일ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.새로만들기ToolStripMenuItem,
             this.열기ToolStripMenuItem,
@@ -111,6 +91,7 @@ namespace Memo
             // 
             // 새로만들기ToolStripMenuItem
             // 
+            this.새로만들기ToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.새로만들기ToolStripMenuItem.Name = "새로만들기ToolStripMenuItem";
             this.새로만들기ToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.새로만들기ToolStripMenuItem.Text = "새로 만들기(N)";
@@ -118,6 +99,7 @@ namespace Memo
             // 
             // 열기ToolStripMenuItem
             // 
+            this.열기ToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.열기ToolStripMenuItem.Name = "열기ToolStripMenuItem";
             this.열기ToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.열기ToolStripMenuItem.Text = "열기(O)";
@@ -125,6 +107,7 @@ namespace Memo
             // 
             // 저장ToolStripMenuItem
             // 
+            this.저장ToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.저장ToolStripMenuItem.Name = "저장ToolStripMenuItem";
             this.저장ToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.저장ToolStripMenuItem.Text = "저장(S)";
@@ -132,6 +115,7 @@ namespace Memo
             // 
             // 다른이름으로저장AToolStripMenuItem
             // 
+            this.다른이름으로저장AToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.다른이름으로저장AToolStripMenuItem.Name = "다른이름으로저장AToolStripMenuItem";
             this.다른이름으로저장AToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.다른이름으로저장AToolStripMenuItem.Text = "다른 이름으로 저장(A)";
@@ -144,6 +128,7 @@ namespace Memo
             // 
             // 끝내기XToolStripMenuItem
             // 
+            this.끝내기XToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.끝내기XToolStripMenuItem.Name = "끝내기XToolStripMenuItem";
             this.끝내기XToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.끝내기XToolStripMenuItem.Text = "끝내기(X)";
@@ -151,6 +136,7 @@ namespace Memo
             // 
             // 편집EToolStripMenuItem
             // 
+            this.편집EToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.편집EToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.실행취소UToolStripMenuItem,
             this.toolStripSeparator2,
@@ -171,6 +157,7 @@ namespace Memo
             // 
             // 실행취소UToolStripMenuItem
             // 
+            this.실행취소UToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.실행취소UToolStripMenuItem.Name = "실행취소UToolStripMenuItem";
             this.실행취소UToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.실행취소UToolStripMenuItem.Text = "실행 취소(U)";
@@ -183,6 +170,7 @@ namespace Memo
             // 
             // 잘라내기TToolStripMenuItem
             // 
+            this.잘라내기TToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.잘라내기TToolStripMenuItem.Name = "잘라내기TToolStripMenuItem";
             this.잘라내기TToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.잘라내기TToolStripMenuItem.Text = "잘라내기(T)";
@@ -190,6 +178,7 @@ namespace Memo
             // 
             // 복사CToolStripMenuItem
             // 
+            this.복사CToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.복사CToolStripMenuItem.Name = "복사CToolStripMenuItem";
             this.복사CToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.복사CToolStripMenuItem.Text = "복사(C)";
@@ -197,6 +186,7 @@ namespace Memo
             // 
             // 붙여넣기PToolStripMenuItem
             // 
+            this.붙여넣기PToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.붙여넣기PToolStripMenuItem.Name = "붙여넣기PToolStripMenuItem";
             this.붙여넣기PToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.붙여넣기PToolStripMenuItem.Text = "붙여넣기(P)";
@@ -204,6 +194,7 @@ namespace Memo
             // 
             // 삭제LToolStripMenuItem
             // 
+            this.삭제LToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.삭제LToolStripMenuItem.Name = "삭제LToolStripMenuItem";
             this.삭제LToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.삭제LToolStripMenuItem.Text = "삭제(L)";
@@ -216,6 +207,7 @@ namespace Memo
             // 
             // 찾기FToolStripMenuItem
             // 
+            this.찾기FToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.찾기FToolStripMenuItem.Name = "찾기FToolStripMenuItem";
             this.찾기FToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.찾기FToolStripMenuItem.Text = "찾기(F)";
@@ -223,6 +215,7 @@ namespace Memo
             // 
             // 다음찾기NToolStripMenuItem
             // 
+            this.다음찾기NToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.다음찾기NToolStripMenuItem.Name = "다음찾기NToolStripMenuItem";
             this.다음찾기NToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.다음찾기NToolStripMenuItem.Text = "다음 찾기(N)";
@@ -235,6 +228,7 @@ namespace Memo
             // 
             // 모두선택AToolStripMenuItem
             // 
+            this.모두선택AToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.모두선택AToolStripMenuItem.Name = "모두선택AToolStripMenuItem";
             this.모두선택AToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.모두선택AToolStripMenuItem.Text = "모두 선택(A)";
@@ -242,6 +236,7 @@ namespace Memo
             // 
             // 시간날짜ToolStripMenuItem
             // 
+            this.시간날짜ToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.시간날짜ToolStripMenuItem.Name = "시간날짜ToolStripMenuItem";
             this.시간날짜ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.시간날짜ToolStripMenuItem.Text = "시간/날짜(D)";
@@ -249,7 +244,7 @@ namespace Memo
             // 
             // 서식OToolStripMenuItem
             // 
-            this.서식OToolStripMenuItem.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.서식OToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.서식OToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.자동줄바꿈WToolStripMenuItem,
             this.글꼴FToolStripMenuItem});
@@ -260,6 +255,7 @@ namespace Memo
             // 
             // 자동줄바꿈WToolStripMenuItem
             // 
+            this.자동줄바꿈WToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.자동줄바꿈WToolStripMenuItem.Checked = true;
             this.자동줄바꿈WToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.자동줄바꿈WToolStripMenuItem.Name = "자동줄바꿈WToolStripMenuItem";
@@ -269,16 +265,44 @@ namespace Memo
             // 
             // 글꼴FToolStripMenuItem
             // 
+            this.글꼴FToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.글꼴FToolStripMenuItem.Name = "글꼴FToolStripMenuItem";
             this.글꼴FToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.글꼴FToolStripMenuItem.Text = "글꼴(F)";
             this.글꼴FToolStripMenuItem.Click += new System.EventHandler(this.글꼴FToolStripMenuItem_Click);
             // 
+            // txtNote
+            // 
+            this.txtNote.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtNote.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtNote.Font = new System.Drawing.Font("돋움", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtNote.Location = new System.Drawing.Point(0, 24);
+            this.txtNote.Multiline = true;
+            this.txtNote.Name = "txtNote";
+            this.txtNote.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtNote.Size = new System.Drawing.Size(737, 426);
+            this.txtNote.TabIndex = 1;
+            this.txtNote.TextChanged += new System.EventHandler(this.txtNote_TextChanged);
+            // 
+            // fdText
+            // 
+            this.fdText.Color = System.Drawing.Color.LightGray;
+            // 
+            // ofdFile
+            // 
+            this.ofdFile.FileName = "openFileDialog1";
+            this.ofdFile.Filter = "텍스트 파일(*.txt)|*.txt|모든 파일(*.*)|*.*";
+            // 
+            // sfdFile
+            // 
+            this.sfdFile.FileName = "텍스트";
+            this.sfdFile.Filter = "텍스트 파일(*.txt)|*.txt|모든 파일(*.*)|*.*";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(737, 450);
             this.Controls.Add(this.txtNote);
             this.Controls.Add(this.menuBar);

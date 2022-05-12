@@ -51,6 +51,7 @@ namespace Memo
             // 
             // txtWord
             // 
+            this.txtWord.BackColor = System.Drawing.SystemColors.Menu;
             this.txtWord.Location = new System.Drawing.Point(76, 8);
             this.txtWord.Name = "txtWord";
             this.txtWord.Size = new System.Drawing.Size(336, 21);
@@ -59,21 +60,23 @@ namespace Memo
             // 
             // btnOk
             // 
+            this.btnOk.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnOk.Location = new System.Drawing.Point(427, 7);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
             this.btnOk.TabIndex = 2;
             this.btnOk.Text = "다음 찾기";
-            this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.UseVisualStyleBackColor = false;
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnCancel.Location = new System.Drawing.Point(427, 56);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 3;
             this.btnCancel.Text = "취 소";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // rdb01
@@ -88,6 +91,7 @@ namespace Memo
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.groupBox1.Controls.Add(this.rdb02);
             this.groupBox1.Controls.Add(this.rdb01);
             this.groupBox1.Location = new System.Drawing.Point(212, 35);
@@ -112,17 +116,19 @@ namespace Memo
             // cbOption
             // 
             this.cbOption.AutoSize = true;
+            this.cbOption.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.cbOption.Location = new System.Drawing.Point(45, 64);
             this.cbOption.Name = "cbOption";
             this.cbOption.Size = new System.Drawing.Size(106, 16);
             this.cbOption.TabIndex = 6;
             this.cbOption.Text = "대/소문자 구분";
-            this.cbOption.UseVisualStyleBackColor = true;
+            this.cbOption.UseVisualStyleBackColor = false;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(519, 123);
             this.Controls.Add(this.cbOption);
             this.Controls.Add(this.groupBox1);
